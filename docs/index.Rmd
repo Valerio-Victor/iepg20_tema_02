@@ -28,12 +28,14 @@ style_mono_light(base_color = '#1c5253',
 
 # CONFIGURAÇÃO PADRÃO CHUNK: ----
 knitr::opts_chunk$set(echo = F,
+                      cache = T,
                       results = 'asis', 
                       warning = F, 
                       message = F, 
                       error = F, 
                       fig.align = 'center', 
-                      out.width = '100%')
+                      out.width = '100%',
+                      dpi = 600)
 
 # RECURSOS DO SLIDE: ----
 use_scribble()
@@ -60,7 +62,7 @@ name: introducao
 ---
 ## O BRASIL EM PERSPECTIVA
 
-```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
+```{r }
 library(magrittr, include.only = '%>%')
 
 ipca_ts <- sidrar::get_sidra(api = '/t/1737/n1/all/v/63,69,2266/p/all/d/v63%202,v69%202,v2266%2013') %>%
