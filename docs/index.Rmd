@@ -865,6 +865,7 @@ consolidado <- consolidado %>%
                       size = .75) +
   ggplot2::scale_y_continuous(labels = scales::number_format(suffix = '%'),
                               limits = c(0, max(consolidado$Valor))) +
+  ggplot2::scale_color_manual(values = c('#1c5253','#FF8848')) + 
   ggplot2::labs(title = 'Preços Livres x Preços Monitorados',
                 lab = '',
                 x = 'Meses',
@@ -933,6 +934,7 @@ consolidado <- consolidado %>%
                       size = .75) +
   ggplot2::scale_y_continuous(labels = scales::number_format(suffix = '%'),
                               limits = c(0, max(consolidado$Valor))) +
+  ggplot2::scale_color_manual(values = c('#1c5253','#FF8848')) + 
   ggplot2::labs(title = 'Comercializáveis x Não Comercializáveis',
                 lab = '',
                 x = 'Meses',
