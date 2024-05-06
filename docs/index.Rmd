@@ -1,6 +1,6 @@
 ---
-title: 'TAXA DE INFLAÇÃO - CONCEITOS </br> (TEMA 02)'
-subtitle: 'IEPG20 - Introdução à Economia'
+title: 'TAXA DE INFLAÇÃO'
+subtitle: 'Introdução à Economia </br> (IEPG20)'
 author: 'Autor: Victor Valerio'
 date: 'Última atualização: `r format(Sys.Date(),"%d-%m-%Y")`'
 output:
@@ -28,7 +28,7 @@ style_mono_light(base_color = '#1c5253',
 
 # CONFIGURAÇÃO PADRÃO CHUNK: ----
 knitr::opts_chunk$set(echo = F,
-                      cache = F,
+                      cache = T,
                       results = 'asis', 
                       warning = F, 
                       message = F, 
@@ -43,6 +43,8 @@ use_search(show_icon = TRUE)
 ```
 
 ## TÓPICOS ABORDADOS
+ ---
+ 
 </br>
 
 - [**INTRODUÇÃO**](#introducao)
@@ -61,6 +63,7 @@ name: introducao
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r }
 library(magrittr, include.only = '%>%')
@@ -106,7 +109,8 @@ widgetframe::frameWidget(acum_ano, width = '100%', height = '100%')
 ---
 ## INTRODUÇÃO
 <div style="text-align: justify">
-
+ ---
+ 
 - Antes de prosseguir, é necessário definir o que é uma **CESTA DE CONSUMO**, 
 conjunto de bens e serviços (tipos e quantidades de produtos) efetivamente 
 consumidos por um determinado consumidor. 
@@ -122,6 +126,7 @@ de consumo. Para tanto, basta-se definir alguns critérios para o grupo
   
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -162,6 +167,7 @@ widgetframe::frameWidget(difusao, width = '100%', height = '100%')
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Define-se por série histórica (ou série temporal) a análise de uma determinada 
 variável ao longo do tempo. Este tipo de análise é amplamente utilizada em 
@@ -176,6 +182,7 @@ o seu respectivo valor absoluto.
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Assim, desenvolveu-se um recurso estatístico com a finalidade de facilitar uma 
 análise de evolução de uma série histórica. Este recurso estatístico é denominado 
@@ -188,6 +195,7 @@ proporcionalidade das distâncias dos valores entre os períodos.
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - O cálculo do **número índice** é muito simples e pode ser compreendido a 
 partir de uma sequência de 3 passos, são eles:
@@ -205,6 +213,7 @@ partir de uma sequência de 3 passos, são eles:
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
 
@@ -261,6 +270,7 @@ knitr::kable(ex_numero_indice,
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Sob uma perspectiva prática, pode-se citar como um problema recorrente da 
 macroeconomia a análise da evolução dos preços de uma cesta de consumo ao longo 
@@ -275,6 +285,7 @@ discutem o passo a passo para se construir o número índice de uma cesta de con
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
 
@@ -358,6 +369,7 @@ knitr::kable(ex_numero_indice,
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
   
 - O Brasil possui diversos **índices de inflação** mensurados periodicamente, 
 cada um com a sua finalidade, são exemplos:
@@ -371,6 +383,7 @@ cada um com a sua finalidade, são exemplos:
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Neste curso vamos nos concentrar  no **IPCA**, entretanto, exceto 
 especifidades de cálculos, as formas de análise são similares.
@@ -382,6 +395,7 @@ especifidades de cálculos, as formas de análise são similares.
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
 
@@ -396,6 +410,7 @@ especifidades de cálculos, as formas de análise são similares.
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
   
@@ -408,6 +423,7 @@ especifidades de cálculos, as formas de análise são similares.
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
 
@@ -420,6 +436,7 @@ especifidades de cálculos, as formas de análise são similares.
 ---
 <div style="text-align: justify">
 ## INTRODUÇÃO
+ ---
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
   
@@ -433,6 +450,7 @@ especifidades de cálculos, as formas de análise são similares.
 
 ---
 ## INTRODUÇÃO
+ ---
 
 - Os grupos são definidos por tipos (usos) de produtos, conforme abaixo:
 
@@ -460,6 +478,7 @@ especifidades de cálculos, as formas de análise são similares.
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r, warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -504,6 +523,7 @@ name: conceitoipca
 ---
 <div style="text-align: justify">
 ## CONCEITO DE INFLAÇÃO
+ ---
 
 - **INFLAÇÃO**:
 
@@ -519,6 +539,7 @@ $$Taxa \ de \ Inflação \ no \ Período \ t = \frac{IPCA_t - IPCA_{t-1}}{IPCA_{
 ---
 <div style="text-align: justify">
 ## CONCEITO DE INFLAÇÃO
+ ---
 
 - Associado ao conceito de inflação, pode-se citar o conceito de 
 **HIPERINFLAÇÃO**:
@@ -528,6 +549,7 @@ $$Taxa \ de \ Inflação \ no \ Período \ t = \frac{IPCA_t - IPCA_{t-1}}{IPCA_{
 
 ---
 ## O BRASIL EM PERSPECTIVA: INFLAÇÃO MENSAL "CHEIA"
+ ---
 
 ```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -567,6 +589,7 @@ widgetframe::frameWidget(var_ipca_cheio_gg, width = '100%', height = '100%')
 
 ---
 ## O BRASIL EM PERSPECTIVA: PESOS ÍNDICE INFLAÇÃO
+ ---
 
 ```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -612,6 +635,7 @@ widgetframe::frameWidget(pesos, width = '100%', height = '100%')
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -716,6 +740,7 @@ widgetframe::frameWidget(consolidadogg, width = '100%', height = '100%')
 ---
 <div style="text-align: justify">
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
+ ---
 
 - **DESINFLAÇÃO**:
 
@@ -729,6 +754,7 @@ widgetframe::frameWidget(consolidadogg, width = '100%', height = '100%')
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r, warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -771,6 +797,7 @@ widgetframe::frameWidget(acum_ano, width = '100%', height = '100%')
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
@@ -816,6 +843,7 @@ widgetframe::frameWidget(acum_ano, width = '100%', height = '100%')
 ---
 <div style="text-align: justify">
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
+ ---
 
 - CRITÉRIO DE AGRUPAMENTO: INFLUÊNCIA DE POLÍTICA GOVERNAMENTAL NOS PREÇOS:
 
@@ -829,6 +857,7 @@ preços podem ser considerados virtualmente livres (álcool e passagens aéreas)
 ---
 <div style="text-align: justify">
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
+ ---
 
 - CRITÉRIO DE AGRUPAMENTO: INFLUÊNCIA DE POLÍTICA GOVERNAMENTAL NOS PREÇOS:
 
@@ -837,10 +866,12 @@ partir de fatores de oferta e demanda.
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r,  warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
 library(magrittr, include.only = '%>%')
+library(plotly)
 
 var_livres <- BETS::BETSget(code = 11428,
                             data.frame = TRUE,
@@ -870,11 +901,13 @@ consolidado <- consolidado %>%
                 lab = '',
                 x = 'Meses',
                 y = 'Variação Mensal',
+                color = '',
                 caption = 'Dados: IBGE.') +
   xaringanthemer::theme_xaringan(text_font_size = 15,
                                  title_font_size = 20)
 
-consolidado <- plotly::ggplotly(consolidado)
+consolidado <- plotly::ggplotly(consolidado) %>% 
+  layout(legend = list(orientation = 'h'))
 
 widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 
@@ -883,6 +916,7 @@ widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 ---
 <div style="text-align: justify">
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
+ ---
 
 - CRITÉRIO DE AGRUPAMENTO: Comércio Internacional:
 
@@ -894,6 +928,7 @@ widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 ---
 <div style="text-align: justify">
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
+ ---
 
 - CRITÉRIO DE AGRUPAMENTO: Comércio Internacional:
 
@@ -906,10 +941,12 @@ widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 
 ---
 ## O BRASIL EM PERSPECTIVA
+ ---
 
 ```{r, warning = F,message = F, error = F, echo = F, fig.align = 'center', dpi = 300}
 
 library(magrittr, include.only = '%>%')
+library(plotly)
 
 var_comerc <- BETS::BETSget(code = 4447,
                             data.frame = TRUE,
@@ -939,11 +976,13 @@ consolidado <- consolidado %>%
                 lab = '',
                 x = 'Meses',
                 y = 'Variação Mensal',
-                caption = 'Dados: IBGE.') +
+                caption = 'Dados: IBGE.',
+                color = '') +
   xaringanthemer::theme_xaringan(text_font_size = 15,
                                  title_font_size = 20)
 
-consolidado <- plotly::ggplotly(consolidado)
+consolidado <- plotly::ggplotly(consolidado) %>% 
+  layout(legend = list(orientation = 'h'))
 
 widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 
@@ -958,6 +997,7 @@ name: causas_inflacao
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - Pode-se elencar alguns fatores para aumento do nível de preços (generalizado e consistente), 
 principalmente:
@@ -973,6 +1013,7 @@ impacto de cada um deles.
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - **Inflação de Demanda**: Quando a economia está “muito aquecida” (nível alto de consumo) os 
 produtores tendem a aumentar os preços dos bens objetivando obter maior nível de lucro.
@@ -986,6 +1027,7 @@ knitr::include_graphics('demanda.png', dpi = 300)
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - **Inflação de Custos**: Quando o sistema produtivo é ineficiente, os custos de produção são 
 inerentemente maiores. Estes custos de produção são repassados aos bens finais. 
@@ -999,6 +1041,7 @@ knitr::include_graphics('custos.png', dpi = 300)
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - **Choque de Oferta**: Quando um fator inesperado (exógeno) causa uma diminuição no nível de 
 produção e/ou oferta. Com menor quantidade do bem no mercado, seu preço aumenta.
@@ -1012,6 +1055,7 @@ knitr::include_graphics('choque_oferta.png', dpi = 300)
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - **Inflação Inercial**: Quando a inflação de um período é repassada contratualmente para o período 
 posterior devido as expectativas dos agentes de permanência da inflação.
@@ -1025,6 +1069,7 @@ knitr::include_graphics('inercial.png', dpi = 300)
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - Para se **combater a inflação** existem, pelo menos, três grupos de **políticas**:
 
@@ -1039,6 +1084,7 @@ knitr::include_graphics('inercial.png', dpi = 300)
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - Também devido a inflação, **não se pode comparar valores monetários de maneira direta** (chamados 
 **valores nominais**);
@@ -1048,6 +1094,7 @@ knitr::include_graphics('inercial.png', dpi = 300)
 ---
 <div style="text-align: justify">
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+ ---
 
 - Assim, valores monetários diferentes representam "poderes de compra" diferentes de acordo com os 
 períodos e/ou regiões analisadas;
