@@ -1,7 +1,8 @@
 xaringanthemer
 xaringanExtra
 magrittr
-RSQLite
+httr
+jsonlite
 kableExtra
 ggplot2
 plotly
